@@ -7,6 +7,8 @@ html {
 body {
     padding: 0;
     margin: 0;
+
+    background: rgb(11, 23, 34);
 }
 
 ::-webkit-scrollbar {
@@ -38,7 +40,7 @@ NAVIGATION BAR
     margin: 0;
     padding: 0;
     
-    background-color: darkblue;
+    background-color: rgb(10, 10, 56);
     position: fixed;
     
     display: flex;
@@ -85,18 +87,22 @@ HOME
 
 #home h1 {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 35px;
     margin-left: auto;
     text-align: right;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 90px;
+    color: white;
+    color: black;
 }
 
 #home .personal-info {
     margin-left: 20px;
     margin-right: auto;
+    
     font-size: 20px;
+    color: white;
 }
 
 #home .personal-info pre {
@@ -105,6 +111,9 @@ HOME
     padding: 0 20px;
 
     border-radius: 10px;
+    border: 1px solid rgb(91, 79, 79);
+
+    box-shadow: 10px 10px 10px 0 rgba(38, 2, 74, 0.639);
 }
 
 #home .personal-info .operator {
@@ -121,8 +130,11 @@ HOME
 
 #home .personal-info p {
     margin: 0;
+    margin-left: 20px;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
 }
 
 
@@ -132,10 +144,14 @@ ABOUT ME
 ===========================================
 */
 #about-me {
+    height: 100vh;
+
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+
+    background: rgb(37, 17, 17);
 }
 
 #about-me .title {
@@ -143,7 +159,7 @@ ABOUT ME
     margin-left: 30px;
     margin-right: auto;
     
-    color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 90px;
     font-weight: bold;
@@ -161,4 +177,13 @@ ABOUT ME
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    color: white;
+}
+
+
+#contact {
+    height: 100vh;
+    width: 100%;
+
+    background: rgb(20, 16, 26);
 }

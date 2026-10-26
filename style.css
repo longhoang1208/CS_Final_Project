@@ -4,12 +4,37 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     padding: 0;
     margin: 0;
 
-    background: rgb(11, 23, 34);
+    background:
+        linear-gradient(
+            rgba(73, 73, 73, 0.2) 1px,
+            transparent 1px
+            ),
+        linear-gradient(
+            90deg,
+            rgba(73, 73, 73, 0.2) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgb(0, 0, 0),
+            rgb(9, 8, 26),
+            rgb(18, 17, 44),
+            rgb(67, 26, 54)
+        );
+
+    background-size:
+        50px 50px,
+        50px 50px,
+        cover;
+
+    background-attachment: fixed;
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -26,13 +51,24 @@ body {
 }
 
 
+.section-title {
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+
 /*
 ===========================================
 NAVIGATION BAR
 ===========================================
 */
 #navbar {
-    height: 50px;
+    height: 40px;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -40,13 +76,15 @@ NAVIGATION BAR
     margin: 0;
     padding: 0;
     
-    background-color: rgb(10, 10, 56);
+    background-color: rgba(26, 16, 54, 0.585);
     position: fixed;
     
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
+    border-bottom: 2px solid rgb(43, 43, 43);
 }
 
 #navbar ul {
@@ -58,14 +96,13 @@ NAVIGATION BAR
     margin: 0 50px 0 0;
     
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 16px;
     
 }
 
 #navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(162, 167, 207);
 }
 
 
@@ -76,65 +113,28 @@ HOME
 */
 #home {
     height: 100vh;
-    padding-top: 50px;
+    margin-top: 80px;
+    scroll-margin-top: 80px;
+
+    padding: 0;
     box-sizing: border-box;
 
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    flex-direction: column;
     gap: 0;
 }
 
-#home h1 {
-    margin: 0;
-    margin-right: 35px;
-    margin-left: auto;
-    text-align: right;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
-    color: white;
-    color: black;
+#home .section-title {
+    margin-left: 30px;
 }
 
-#home .personal-info {
-    margin-left: 20px;
-    margin-right: auto;
-    
+#home h2 {
+    margin-left: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: white;
-}
-
-#home .personal-info pre {
-    background: rgb(23, 23, 23);
-    color: white;
-    padding: 0 20px;
-
-    border-radius: 10px;
-    border: 1px solid rgb(91, 79, 79);
-
-    box-shadow: 10px 10px 10px 0 rgba(38, 2, 74, 0.639);
-}
-
-#home .personal-info .operator {
-    color: rgb(255, 0, 93);
-}
-
-#home .personal-info .string {
-    color: rgb(106, 153, 233);
-}
-
-#home .personal-info .number {
-    color: rgb(154, 220, 154);
-}
-
-#home .personal-info p {
-    margin: 0;
-    margin-left: 20px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: white;
+    font-weight: lighter;
+    color: rgb(100, 100, 100);
 }
 
 
@@ -150,19 +150,6 @@ ABOUT ME
     flex-direction: row;
     gap: 10px;
     align-items: center;
-
-    background: rgb(37, 17, 17);
-}
-
-#about-me .title {
-    width: 200px;
-    margin-left: 30px;
-    margin-right: auto;
-    
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
-    font-weight: bold;
 }
 
 #about-me .paragraphs {
@@ -185,5 +172,10 @@ ABOUT ME
     height: 100vh;
     width: 100%;
 
-    background: rgb(20, 16, 26);
+    background: linear-gradient(
+        to bottom,
+        rgba(56, 56, 56, 0),
+        rgba(28, 26, 36, 0.689),
+        rgba(28, 26, 36, 0.689)
+    );
 }

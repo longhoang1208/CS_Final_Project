@@ -8,4 +8,4 @@
 ---
 
 ## About me
-&nbsp;&nbsp;&nbsp;&nbsp;A high school student at US Vietnam Talent International School with a strong focus on Computer Science major, especially Artificial Intelligence. Demonstrated hands-on experience in self-studying machine learning algorithms and building practical computer vision models to solve real-world problems.
+&nbsp;&nbsp;&nbsp;&nbsp;A high school student with a strong focus on Computer Science major, especially Artificial Intelligence. Demonstrated hands-on experience in self-studying machine learning algorithms and building practical computer vision models to solve real-world problems.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Career Orientation Website</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,21 +11,69 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About</a></li>
+            <li><a href="#interested-majors">Majors</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <h2>👋 Welcome to</h2>
-        <h1 class="section-title">My Portfolio</h1>
+        <h1 class="section-title">My Career</h1>
+        <h1 class="section-title">Orientation</h1>
         <h1 class="section-title">Website</h1>
     </section>
 
     <section id="about-me">
         <h1 class="section-title">About me</h1>
         <div class="paragraphs">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;A high school student with a strong focus on Computer Science major, especially Artificial Intelligence. Demonstrated hands-on experience in self-studying machine learning algorithms and building practical computer vision models to solve real-world problems.
+            </p>
+        </div>
+
+        <div id="my-projects">
+            <h2 class="title">My projects</h2>
+            <div id="projects-display">
+                <!-- Hand Gesture Detector -->
+                <div class="project-card">
+                    <h2 class="project-title yellow">Hand Gesture Detector</h2>
+                    <a href="https://github.com/longhoang1208/HandGestureDetector" class="proj-ref" target="_blank">
+                        github.com/longhoang1208/HandGestureDetector
+                    </a>
+    
+                    <p class="proj-description">
+                        &nbsp;&nbsp;&nbsp;&nbsp;An application that use BiLSTM model to recognize users' hand gestures. Moreover, users can train their own models for their gestures set.
+                    </p>
+                </div>
+
+                <!-- Vehicle Tracker -->
+                <div class="project-card">
+                    <h2 class="project-title blue">Vehicle Tracker</h2>
+                    <a href="https://github.com/longhoang1208/Vehicle-Tracker" class="proj-ref" target="_blank">
+                        github.com/longhoang1208/Vehicle-Tracker
+                    </a>
+    
+                    <p class="proj-description">
+                        &nbsp;&nbsp;&nbsp;&nbsp;This is a machine learning project using YOLOv8 (You Only Look Once v8) of Ultralytics to detect and track vehicles (in the given video) and calculate their speed.
+                    </p>
+                </div>
+
+                <!-- User Face Recognition -->
+                <div class="project-card">
+                    <h2 class="project-title red">User Face Recognition</h2>
+                    <a href="https://github.com/longhoang1208/UserFaceRecognition" class="proj-ref" target="_blank">
+                        github.com/longhoang1208/UserFaceRecognition
+                    </a>
+    
+                    <p class="proj-description">
+                        &nbsp;&nbsp;&nbsp;&nbsp;A python program that can recognize whether the current user is the admin or not through webcam.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+    
+    <section id="interested-majors"></section>
 
     <section id="contact">
     </section>

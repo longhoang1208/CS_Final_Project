@@ -7,22 +7,48 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!--
+    ========================================================
+    NAVIGATION BAR
+    ========================================================
+    -->
     <nav id="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About</a></li>
-            <li><a href="#interested-majors">Majors</a></li>
+            <li>
+                <div class="droplist">
+                    <a href="#interested-majors">Majors</a>
+                    <div class="droplist-content">
+                        <a href="#AI-major">Artificial Intelligence</a>
+                        <a href="#cybersecurity-major">Cybersecurity</a>
+                        <a href="#data-science-major">Data Science</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!--
+    ========================================================
+    HOME PAGE
+    ========================================================
+    -->
     <section id="home">
-        <h2>👋 Welcome to</h2>
-        <h1 class="section-title">My Career</h1>
-        <h1 class="section-title">Orientation</h1>
-        <h1 class="section-title">Website</h1>
+        <div id="home-title">
+            <h2>👋 Welcome to</h2>
+            <h1 class="section-title">My Career</h1>
+            <h1 class="section-title">Orientation</h1>
+            <h1 class="section-title">Website</h1>
+        </div>
     </section>
 
+    <!--
+    ========================================================
+    ABOUT ME
+    ========================================================
+    -->
     <section id="about-me">
         <h1 class="section-title">About me</h1>
         <div class="paragraphs">
@@ -73,7 +99,7 @@
                     </p>
                 </div>
                 
-                <!-- User Face Recognition -->
+                <!-- Typing Practice -->
                 <div class="project-card">
                     <h2 class="project-title">🟢 Typing Practice</h2>
 
@@ -88,23 +114,101 @@
             </div>
         </div>
     </section>
-    
-    <section id="interested-majors"></section>
 
+    <!--
+    ========================================================
+    INTERESTED MAJORS
+    ========================================================
+    -->
+    <section id="interested-majors">
+        <h1 class="section-title">My Interested Majors</h1>
+
+        <div class="major-tag">
+            <h2>
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Icon_AI_brain_blue.svg/960px-Icon_AI_brain_blue.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                alt="Artificial Intelligence"
+                width="30"
+            >
+                Artificial Intelligence
+            </h2>
+        </div>
+
+        <div class="major-tag">
+            <h2>
+                <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png"
+                alt="Cybersecurity"
+                width="30"
+            >
+                Cybersecurity
+            </h2>
+        </div>
+
+        <div class="major-tag">
+            <h2>
+                <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png"
+                alt="Data Science"
+                width="30"
+            >
+                Data Science
+            </h2>
+        </div>
+
+        <section id="AI-major">
+            <h1 class="major-title">Artificial Intelligence</h1>
+        </section>
+        <section id="cybersecurity-major"></section>
+        <section id="data-science-major"></section>
+    </section>
+
+    <!--
+    ========================================================
+    CONTACT
+    ========================================================
+    -->
     <section id="contact">
         <h1 class="section-title">Contact</h1>
         <div id="platforms-display">
-            <p class="platform">
-                <b>Email:</b> <a href="mailto:hlong121508@gmail.com">hlong121508@gmail.com</a>
-            </p>
+            <div class="platform">
+                <div class="title">
+                    <img
+                        src="https://brandlogos.net/wp-content/uploads/2020/10/gmail-logo-1.png"
+                        alt="github"
+                        width="30"
+                    >
+                    <h2>Email</h2>
+                </div>
+                <a href="mailto:hlong121508@gmail.com">hlong121508@gmail.com</a>
+            </div>
 
-            <p class="platform">
-                <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/long-hoang-11434743b/" target="_blank">linkedin.com/in/long-hoang</a>
-            </p>
+            <div class="platform">
+                <div class="title">
+                    <img
+                        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/3840px-LinkedIn_icon_circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                        alt="linkedin"
+                        width="30"
+                    >
+                    <h2>LinkedIn</h2>
+                </div>
+                <a href="https://www.linkedin.com/in/long-hoang-11434743b/" target="_blank">linkedin.com/in/long-hoang</a>
+            </div>
 
-            <p class="platform">
-                <b>GitHub:</b> <a href="https://github.com/longhoang1208" target="_blank">github.com/longhoang1208</a>
-            </p>
+            <div class="platform">
+                <div class="title">
+                    <img
+                        src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
+                        alt="github"
+                        width="30"
+                    >
+                    <h2>GitHub</h2>
+                </div>
+                <a href="https://github.com/longhoang1208" target="_blank">github.com/longhoang1208</a>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Subject:</b> AP Computer Science</p>
+            <p><b>Project:</b> Career Orientation Website</p>
+            <p><b>Contributors:</b> Hoang Long</p>
         </div>
     </section>
 </body>

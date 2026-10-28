@@ -67,7 +67,7 @@ section {
     
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(10rem, 6vw, none);
+    font-size: 6rem;
     font-weight: bold;
 }
 
@@ -78,13 +78,13 @@ NAVIGATION BAR
 ===========================================
 */
 #navbar {
-    height: clamp(0.1vh, 6vh, none);
+    min-height: fit-content;
+    
     width: 100%;
     top: 0;
-    z-index: 1000;
 
     margin: 0;
-    padding: 0;
+    padding: 0.5em 0;
     
     background-color: rgb(18, 9, 42);
     position: fixed;
@@ -95,23 +95,51 @@ NAVIGATION BAR
     justify-content: flex-end;
 
     border-bottom: 2px solid rgb(43, 43, 43);
+
+    z-index: 1000;
 }
 
 #navbar ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
 
-    margin: 0 50px 0 0;
+    margin: 0;
+    margin-right: 2em;
     
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 3.5cqh;
 }
 
 #navbar ul li a {
     text-decoration: none;
+    padding: 1cqh 1em;
     color: rgb(162, 167, 207);
+}
+
+#navbar .droplist {
+    position: relative;
+}
+
+/* Droplist */
+#navbar .droplist-content{
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 0.6em;
+
+    background-color: rgb(29, 17, 65);
+    flex-direction: column;
+    width: 12em;
+    border-bottom: 1px solid gray;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(40, 40, 63);
+}
+
+#navbar .droplist:hover .droplist-content {
+    display: flex;
 }
 
 
@@ -121,26 +149,31 @@ HOME
 ===========================================
 */
 #home {
-    margin-top: 10vh;
-    scroll-margin-top: 80px;
-
     padding: 0;
-    box-sizing: border-box;
+    margin-bottom: 10vh;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0;
 }
 
+#home-title {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
 #home .section-title {
-    margin-left: 5vw;
+    margin-left: 5cqw;
 }
 
 #home h2 {
-    margin-left: 5vw;
+    margin: 0;
+    margin-left: 5cqw;
+    margin-top: 20cqh;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: lighter;
     color: rgb(100, 100, 100);
 }
@@ -152,49 +185,45 @@ ABOUT ME
 ===========================================
 */
 #about-me {
-    scroll-margin-top: 80px;
-    padding-bottom: 50px;
-
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: flex-start;
 }
 
 #about-me .section-title {
-    margin-left: 50px;
+    margin-left: 5cqw;
+    margin-top: 10cqh;
     color: aquamarine;
 }
 
 #about-me .paragraphs {
-    width: 800px;
+    width: 80vw;
 
     display: flex;
     flex-direction: column;
     gap: 5px;
 
-    margin-left: 50px;
+    margin-left: 5cqw;
     text-align: left;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    color: rgb(217, 217, 217);
 }
 
 #my-projects {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 #my-projects .title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 2em;
     color: rgb(192, 242, 254);
 
     margin: 0;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 5cqw;
+    margin-top: 5cqh;
 }
 
 /* PROJECT CARD */
@@ -202,11 +231,12 @@ ABOUT ME
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1em;
+
+    justify-content: center;
 
     margin: 0;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 3cqh;
 }
 
 .project-card {
@@ -214,22 +244,22 @@ ABOUT ME
 
     width: 40vw;
     height: fit-content;
-    padding: 10px 15px;
+    padding: 1em 1em;
 
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.5em;
 
     background: rgba(20, 20, 30, 0.862);
 
     border: 1px solid rgb(90, 90, 90);
-    border-radius: 10px;
+    border-radius: 1em;
 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-title {
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: bold;
     color: rgb(165, 247, 236);
 
@@ -239,7 +269,7 @@ ABOUT ME
 .proj-ref {
     text-decoration: none;
     font-family: monospace;
-    font-size: 11px;
+    font-size: 1em;
     color: rgb(108, 108, 108);
 
     margin: 0;
@@ -247,10 +277,10 @@ ABOUT ME
 
 .proj-description {
     color: white;
-    font-size: 14px;
+    font-size: 1em;
 
     margin: 0;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 
@@ -259,7 +289,17 @@ ABOUT ME
 MAJORS
 ===========================================
 */
+#interested-majors {
+    display: flex;
+    flex-direction: column;
+}
 
+#interested-majors .section-title {
+    margin-top: 10cqh;
+    margin-left: 5cqw;
+
+    font-size: 3rem;
+}
 
 
 /*
@@ -276,31 +316,74 @@ CONTACT
 
     display: flex;
     flex-direction: column;
-
-    padding-bottom: 50px;
+    align-items: center;
 }
 
 #contact .section-title {
     margin: 0;
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 30cqh;
+
+    font-size: 4rem;
 }
 
 #platforms-display {
     height: fit-content;
-    min-height: 200px;
-    width: 800px;
+    min-height: 20cqh;
+    
+    width: fit-content;
+    min-width: 80vw;
 
     margin: 0;
-    margin-left: 80px;
-    margin-top: 50px;
+    margin-top: 3cqh;
+
+    padding: 2em 1em;
 
     display: flex;
     flex-direction: row;
-    
-    font-family: Arial, Helvetica, sans-serif;
 
-    background: rgb(45, 38, 56);
-    border-radius: 20px;
-    padding: 10px 10px;
+    gap: 2em;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 1em;
+}
+
+.platform .title{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    width: fit-content;
+    height: fit-content;
+
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.platform a {
+    text-decoration: none;
+    color: rgb(134, 195, 252);
+    font-family: monospace;
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: rgb(110, 110, 110);
+
+    align-self: flex-start;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    margin-top: auto;
+}
+
+#footer p {
+    margin: 0;
 }

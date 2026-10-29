@@ -67,7 +67,7 @@ section {
     
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 6rem;
+    font-size: 15vh;
     font-weight: bold;
 }
 
@@ -78,7 +78,7 @@ NAVIGATION BAR
 ===========================================
 */
 #navbar {
-    height: 2em;
+    height: 5vh;
     
     width: 100%;
     top: 0;
@@ -189,7 +189,7 @@ HOME
     margin-top: 20cqh;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 5vh;
     font-weight: lighter;
     color: rgb(100, 100, 100);
 }
@@ -314,8 +314,6 @@ MAJORS
     margin-top: 15cqh;
     margin-bottom: 5cqh;
     margin-left: 5cqw;
-
-    font-size: 3rem;
 }
 
 .major-description {

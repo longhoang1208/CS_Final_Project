@@ -78,13 +78,13 @@ NAVIGATION BAR
 ===========================================
 */
 #navbar {
-    min-height: fit-content;
+    height: 2em;
     
     width: 100%;
     top: 0;
 
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0;
     
     background-color: rgb(18, 9, 42);
     position: fixed;
@@ -102,7 +102,7 @@ NAVIGATION BAR
 #navbar ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-direction: row;
 
     margin: 0;
     margin-right: 2em;
@@ -111,10 +111,15 @@ NAVIGATION BAR
     font-size: 3.5cqh;
 }
 
+#navbar ul li {
+    transition: transform 0.2s ease-in-out;
+}
+
 #navbar ul li a {
     text-decoration: none;
     padding: 1cqh 1em;
     color: rgb(162, 167, 207);
+    height: 100%;
 }
 
 #navbar .droplist {
@@ -128,14 +133,25 @@ NAVIGATION BAR
     color: white;
     font-size: 0.6em;
 
-    background-color: rgb(29, 17, 65);
+    background-color: rgb(18, 9, 42);
     flex-direction: column;
     width: 12em;
+    height: fit-content;
+    margin-top: 0.5em;
     border-bottom: 1px solid gray;
 }
 
-#navbar ul li a:hover {
+#navbar .droplist-content a:first-child {
+    margin-top: 1em;
+}
+
+#navbar .droplist-content a:hover {
     background-color: rgb(40, 40, 63);
+}
+
+#navbar ul li:hover {
+    background-color: rgb(40, 40, 63);
+    transform: scale(1.2);
 }
 
 #navbar .droplist:hover .droplist-content {
@@ -295,10 +311,72 @@ MAJORS
 }
 
 #interested-majors .section-title {
-    margin-top: 10cqh;
+    margin-top: 15cqh;
+    margin-bottom: 5cqh;
     margin-left: 5cqw;
 
     font-size: 3rem;
+}
+
+.major-description {
+    font-family: monospace;
+    font-size: 1.2em;
+    width: 70vw;
+    text-align: center;
+}
+
+
+.major-tag {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.3em 2em 0.3em 1em;
+
+    margin: 0;
+    margin-top: 1.5em;
+    margin-left: 5cqw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(68, 68, 68, 0.373),
+        rgba(39, 30, 30, 0.331)
+    );
+    border: 1px solid rgb(118, 117, 117);
+    border-radius: 0.5em;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.major-tag:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateX(1.5em);
+}
+
+.major-tag a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 2.5cqw;
+    color: rgb(245, 229, 80);
+}
+
+
+#AI-major {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20cqh;
+}
+
+#AI-major .major-title {
+    margin-top: 10cqh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3cqw;
 }
 
 
@@ -376,10 +454,10 @@ CONTACT
 #footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.7em;
-    color: rgb(110, 110, 110);
+    color: rgb(94, 94, 94);
 
     align-self: flex-start;
-    margin-left: 3em;
+    margin-left: 5em;
     margin-bottom: 2em;
     margin-top: auto;
 }

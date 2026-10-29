@@ -180,7 +180,9 @@ HOME
 }
 
 #home .section-title {
+    margin-top: 5cqh;
     margin-left: 5cqw;
+    width: 60vw;
 }
 
 #home h2 {
@@ -275,7 +277,7 @@ ABOUT ME
 }
 
 .project-title {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     color: rgb(165, 247, 236);
 
@@ -293,7 +295,7 @@ ABOUT ME
 
 .proj-description {
     color: white;
-    font-size: 1vw;
+    font-size: 1.5vw;
 
     margin: 0;
     margin-top: 1em;
@@ -311,14 +313,14 @@ MAJORS
 }
 
 #interested-majors .section-title {
-    margin-top: 15cqh;
+    margin-top: 10cqh;
     margin-bottom: 5cqh;
     margin-left: 5cqw;
 }
 
 .major-description {
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 2vw;
     width: 70vw;
     text-align: center;
 }
@@ -345,7 +347,7 @@ MAJORS
         rgba(39, 30, 30, 0.331)
     );
     border: 1px solid rgb(118, 117, 117);
-    border-radius: 0.5em;
+    border-radius: 1em;
 
     transition: transform 0.3s ease-in-out;
 }
@@ -358,23 +360,33 @@ MAJORS
 .major-tag a {
     text-decoration: none;
     font-family: monospace;
-    font-size: 2.5cqw;
+    font-size: 6vh;
     color: rgb(245, 229, 80);
 }
 
 
 #AI-major {
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20cqh;
+    margin-top: 10cqh;
 }
 
-#AI-major .major-title {
+#AI-major .section-title {
     margin-top: 10cqh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3cqw;
+}
+
+#AI-major .major-description {
+    color: rgb(197, 255, 242);
+}
+
+
+#cybersecurity-major {
+    display: flex;
+    flex-direction: column;
+}
+#cybersecurity-major .section-title {
+    margin-top: 10cqh;
 }
 
 
@@ -396,9 +408,7 @@ CONTACT
 }
 
 #contact .section-title {
-    margin: 0;
     margin-top: 30cqh;
-
     font-size: 4rem;
 }
 

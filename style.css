@@ -223,7 +223,7 @@ ABOUT ME
     text-align: left;
 
     font-family: monospace;
-    font-size: 1.5em;
+    font-size: 2cqw;
     color: rgb(217, 217, 217);
 }
 
@@ -234,7 +234,7 @@ ABOUT ME
 
 #my-projects .title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 3vw;
     color: rgb(192, 242, 254);
 
     margin: 0;
@@ -247,7 +247,7 @@ ABOUT ME
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
 
     justify-content: center;
 
@@ -275,7 +275,7 @@ ABOUT ME
 }
 
 .project-title {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: bold;
     color: rgb(165, 247, 236);
 
@@ -285,7 +285,7 @@ ABOUT ME
 .proj-ref {
     text-decoration: none;
     font-family: monospace;
-    font-size: 1em;
+    font-size: 1vw;
     color: rgb(108, 108, 108);
 
     margin: 0;
@@ -293,7 +293,7 @@ ABOUT ME
 
 .proj-description {
     color: white;
-    font-size: 1em;
+    font-size: 1vw;
 
     margin: 0;
     margin-top: 1em;

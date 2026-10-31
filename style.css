@@ -249,7 +249,7 @@ ABOUT ME
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 3vw;
 
     justify-content: center;
 
@@ -260,9 +260,9 @@ ABOUT ME
 .project-card {
     text-decoration: none;
 
-    width: 40vw;
+    width: 35vw;
     height: fit-content;
-    padding: 2em 3em;
+    padding: 1em 2em;
 
     display: flex;
     flex-direction: column;
@@ -378,6 +378,17 @@ MAJORS
 
 #AI-major .major-description {
     color: rgb(197, 255, 242);
+}
+
+#AI-major .sujbects-display {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    align-items: center;
+    justify-self: center;
+
+    gap: 10vw;
 }
 
 

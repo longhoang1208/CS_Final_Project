@@ -111,11 +111,11 @@ NAVIGATION BAR
     font-size: 3.5cqh;
 }
 
-#navbar ul li {
+.nav-section {
     transition: transform 0.2s ease-in-out;
 }
 
-#navbar ul li a {
+.nav-section a {
     text-decoration: none;
     padding: 1cqh 1em;
     color: rgb(162, 167, 207);
@@ -149,13 +149,17 @@ NAVIGATION BAR
     background-color: rgb(40, 40, 63);
 }
 
-#navbar ul li:hover {
+.nav-section:hover {
     background-color: rgb(40, 40, 63);
     transform: scale(1.2);
 }
 
 #navbar .droplist:hover .droplist-content {
     display: flex;
+}
+
+.nav-section.active {
+    background-color: rgb(40, 40, 63);
 }
 
 
@@ -307,6 +311,21 @@ ABOUT ME
 CAREER GROUPS
 ===========================================
 */
+#career-groups {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#career-groups .section-title {
+    margin-top: 10cqh;
+}
+
+#groups-display {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*

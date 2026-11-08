@@ -10,27 +10,27 @@ body {
   margin: 0;
 
   background:
-      linear-gradient(
-          rgba(73, 73, 73, 0.2) 1px,
-          transparent 1px
-          ),
-      linear-gradient(
-          90deg,
-          rgba(73, 73, 73, 0.2) 1px,
-          transparent 1px
-      ),
-      linear-gradient(
-          to bottom,
-          rgb(0, 0, 0),
-          rgb(9, 8, 26),
-          rgb(18, 17, 44),
-          rgb(67, 26, 54)
-      );
+    linear-gradient(
+      rgba(73, 73, 73, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(73, 73, 73, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(0, 0, 0),
+      rgb(9, 8, 26),
+      rgb(18, 17, 44),
+      rgb(67, 26, 54)
+    );
 
   background-size:
-      50px 50px,
-      50px 50px,
-      cover;
+    50px 50px,
+    50px 50px,
+    cover;
 
   background-attachment: fixed;
 
@@ -111,11 +111,11 @@ NAVIGATION BAR
   font-size: 3.5cqh;
 }
 
-.nav-section {
+#navbar .nav-section {
   transition: transform 0.2s ease-in-out;
 }
 
-.nav-section a {
+#navbar .nav-section a {
   text-decoration: none;
   padding: 1cqh 1em;
   color: rgb(162, 167, 207);
@@ -149,7 +149,7 @@ NAVIGATION BAR
   background-color: rgb(40, 40, 63);
 }
 
-.nav-section:hover {
+#navbar .nav-section:hover {
   background-color: rgb(40, 40, 63);
   transform: scale(1.2);
 }
@@ -158,7 +158,7 @@ NAVIGATION BAR
   display: flex;
 }
 
-.nav-section.active {
+#navbar .nav-section.active {
   background-color: rgb(40, 40, 63);
 }
 
@@ -325,6 +325,63 @@ CAREER GROUPS
 #groups-display {
   display: flex;
   flex-direction: column;
+
+  margin-top: 2vh;
+
+  width: 80vw;
+}
+
+#groups-nav {
+  display: flex;
+  justify-content: center;
+  
+  height: fit-content;
+  padding: 0.5em 0 0.5em 0;
+  
+  background: rgb(68, 68, 80);
+  border-radius: 2em;
+}
+
+#groups-nav ul {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+  justify-content: center;
+
+  gap: 25%;
+  margin: 0;
+}
+
+#groups-nav .nav-section {
+  padding: 0.1em 1em 0.1em 1em;
+}
+
+#groups-nav .nav-section:hover {
+  cursor: pointer;
+}
+
+#groups-nav .nav-section p {
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: white;
+  margin: 0;
+}
+
+#groups-nav .nav-section.active {
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 0 1em white;
+}
+
+#groups-nav .nav-section.active p {
+  color: black;
+}
+
+#groups-info {
+  display: none;
 }
 
 
@@ -335,9 +392,9 @@ CONTACT
 */
 #contact {
   background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(16, 15, 22, 0.689)
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(16, 15, 22, 0.689)
   );
 
   display: flex;

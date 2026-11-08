@@ -1,210 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Orientation Website</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Orientation Website</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!--
-    ========================================================
-    NAVIGATION BAR
-    ========================================================
-    -->
-    <nav id="navbar">
+  <!--
+  ========================================================
+  NAVIGATION BAR
+  ========================================================
+  -->
+  <nav id="navbar">
+    <ul>
+      <li class="nav-section active"><a href="#home">Home</a></li>
+      <li class="nav-section"><a href="#about-me">About</a></li>
+      <li class="nav-section">
+        <div class="droplist">
+          <a href="#career-groups">Career Groups</a>
+          <div class="droplist-content">
+            <a href="#Investigative">Investigative</a>
+            <a href="#Realistic">Realistic</a>
+            <a href="#Conventional">Conventional</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-section"><a href="#jobs">Jobs</a></li>
+      <li class="nav-section"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--
+  ========================================================
+  HOME PAGE
+  ========================================================
+  -->
+  <section id="home">
+    <div id="home-title">
+      <h2>👋 Welcome to</h2>
+      <h1 class="section-title">My Career Orientation Website</h1>
+    </div>
+  </section>
+
+  <!--
+  ========================================================
+  ABOUT ME
+  ========================================================
+  -->
+  <section id="about-me">
+    <h1 class="section-title">About me</h1>
+    <div class="paragraphs">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;A high school student with a strong focus on Computer Science major, especially Artificial Intelligence. Demonstrated hands-on experience in self-studying machine learning algorithms and building practical computer vision models to solve real-world problems.
+      </p>
+    </div>
+
+    <div id="my-projects">
+      <h2 class="title">💻 My projects</h2>
+      <div id="projects-display">
+        <!-- Hand Gesture Detector -->
+        <div class="project-card">
+          <h2 class="project-title">🟢 Hand Gesture Detector</h2>
+
+          <a href="https://github.com/longhoang1208/HandGestureDetector" class="proj-ref" target="_blank">
+            github.com/longhoang1208/HandGestureDetector
+          </a>
+
+          <p class="proj-description">
+            &nbsp;&nbsp;&nbsp;&nbsp;An application that use BiLSTM model to recognize users' hand gestures. Moreover, users can train their own models for their gestures set.
+          </p>
+        </div>
+
+        <!-- Vehicle Tracker -->
+        <div class="project-card">
+          <h2 class="project-title">🟢 Vehicle Tracker</h2>
+
+          <a href="https://github.com/longhoang1208/Vehicle-Tracker" class="proj-ref" target="_blank">
+            github.com/longhoang1208/Vehicle-Tracker
+          </a>
+
+          <p class="proj-description">
+            &nbsp;&nbsp;&nbsp;&nbsp;This is a machine learning project using YOLOv8 (You Only Look Once v8) of Ultralytics to detect and track vehicles (in the given video) and calculate their speed.
+          </p>
+        </div>
+        
+        <!-- User Face Recognition -->
+        <div class="project-card">
+          <h2 class="project-title">🟢 User Face Recognition</h2>
+
+          <a href="https://github.com/longhoang1208/UserFaceRecognition" class="proj-ref" target="_blank">
+            github.com/longhoang1208/UserFaceRecognition
+          </a>
+
+          <p class="proj-description">
+            &nbsp;&nbsp;&nbsp;&nbsp;A python program that can recognize whether the current user is the admin or not through webcam.
+          </p>
+        </div>
+        
+        <!-- Typing Practice -->
+        <div class="project-card">
+          <h2 class="project-title">🟢 Typing Practice</h2>
+
+          <a href="https://github.com/longhoang1208/TypingPractice" class="proj-ref" target="_blank">
+            github.com/longhoang1208/TypingPractice
+          </a>
+
+          <p class="proj-description">
+            &nbsp;&nbsp;&nbsp;&nbsp;A personal typing practice site project for educational purpose only, inspired by Monkeytype project and used their English_1k words dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  ========================================================
+  CAREER GROUPS
+  ========================================================
+  -->
+  <section id="career-groups">
+    <h1 class="section-title">Career Groups</h1>
+    <div id="groups-display">
+      <nav id="groups-nav">
         <ul>
-            <li class="nav-section active"><a href="#home">Home</a></li>
-            <li class="nav-section"><a href="#about-me">About</a></li>
-            <li class="nav-section">
-                <div class="droplist">
-                    <a href="#career-groups">Career Groups</a>
-                    <div class="droplist-content">
-                        <a href="#Investigative">Investigative</a>
-                        <a href="#Realistic">Realistic</a>
-                        <a href="#Conventional">Conventional</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-section"><a href="#jobs">Jobs</a></li>
-            <li class="nav-section"><a href="#contact">Contact</a></li>
+          <li class="nav-section active"><p>Investigative</p></li>
+          <li class="nav-section"><p>Realistic</p></li>
+          <li class="nav-section"><p>Conventional</p></li>
         </ul>
-    </nav>
+      </nav>
 
-    <!--
-    ========================================================
-    HOME PAGE
-    ========================================================
-    -->
-    <section id="home">
-        <div id="home-title">
-            <h2>👋 Welcome to</h2>
-            <h1 class="section-title">My Career Orientation Website</h1>
+      <div id="groups-info">
+        <div class="investigative">
+          <h2>INVESTIGATIVE</h2>
         </div>
-    </section>
-
-    <!--
-    ========================================================
-    ABOUT ME
-    ========================================================
-    -->
-    <section id="about-me">
-        <h1 class="section-title">About me</h1>
-        <div class="paragraphs">
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;A high school student with a strong focus on Computer Science major, especially Artificial Intelligence. Demonstrated hands-on experience in self-studying machine learning algorithms and building practical computer vision models to solve real-world problems.
-            </p>
+        
+        <div class="realistic">
+          <h2>REALISTIC</h2>
         </div>
-
-        <div id="my-projects">
-            <h2 class="title">💻 My projects</h2>
-            <div id="projects-display">
-                <!-- Hand Gesture Detector -->
-                <div class="project-card">
-                    <h2 class="project-title">🟢 Hand Gesture Detector</h2>
-
-                    <a href="https://github.com/longhoang1208/HandGestureDetector" class="proj-ref" target="_blank">
-                        github.com/longhoang1208/HandGestureDetector
-                    </a>
-    
-                    <p class="proj-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;An application that use BiLSTM model to recognize users' hand gestures. Moreover, users can train their own models for their gestures set.
-                    </p>
-                </div>
-
-                <!-- Vehicle Tracker -->
-                <div class="project-card">
-                    <h2 class="project-title">🟢 Vehicle Tracker</h2>
-
-                    <a href="https://github.com/longhoang1208/Vehicle-Tracker" class="proj-ref" target="_blank">
-                        github.com/longhoang1208/Vehicle-Tracker
-                    </a>
-    
-                    <p class="proj-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;This is a machine learning project using YOLOv8 (You Only Look Once v8) of Ultralytics to detect and track vehicles (in the given video) and calculate their speed.
-                    </p>
-                </div>
-                
-                <!-- User Face Recognition -->
-                <div class="project-card">
-                    <h2 class="project-title">🟢 User Face Recognition</h2>
-
-                    <a href="https://github.com/longhoang1208/UserFaceRecognition" class="proj-ref" target="_blank">
-                        github.com/longhoang1208/UserFaceRecognition
-                    </a>
-    
-                    <p class="proj-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;A python program that can recognize whether the current user is the admin or not through webcam.
-                    </p>
-                </div>
-                
-                <!-- Typing Practice -->
-                <div class="project-card">
-                    <h2 class="project-title">🟢 Typing Practice</h2>
-
-                    <a href="https://github.com/longhoang1208/TypingPractice" class="proj-ref" target="_blank">
-                        github.com/longhoang1208/TypingPractice
-                    </a>
-    
-                    <p class="proj-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;A personal typing practice site project for educational purpose only, inspired by Monkeytype project and used their English_1k words dataset.
-                    </p>
-                </div>
-            </div>
+        
+        <div class="conventional">
+          <h2>CONVENTIONAL</h2>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!--
-    ========================================================
-    CAREER GROUPS
-    ========================================================
-    -->
-    <section id="career-groups">
-        <h1 class="section-title">Career Groups</h1>
-        <div id="groups-display">
-            <nav id="groups-nav">
-                <ul>
-                    <li>
-                        <h3></h3>
-                    </li>
-    
-                    <li>
-                        <h3></h3>
-                    </li>
-    
-                    <li>
-                        <h3></h3>
-                    </li>
-                </ul>
-            </nav>
-            <div class="investigative">
-                <h2>INVESTIGATIVE</h2>
-            </div>
-            
-            <div class="realistic">
-                <h2>REALISTIC</h2>
-            </div>
-            
-            <div class="conventional">
-                <h2>CONVENTIONAL</h2>
-            </div>
+  <!--
+  ========================================================
+  CONTACT
+  ========================================================
+  -->
+  <section id="contact">
+    <h1 class="section-title">Contact</h1>
+    <div id="platforms-display">
+      <div class="platform">
+        <div class="title">
+          <img
+            src="https://brandlogos.net/wp-content/uploads/2020/10/gmail-logo-1.png"
+            alt="github"
+            width="30"
+          >
+          <h2>Email</h2>
         </div>
-    </section>
+        <a href="mailto:hlong121508@gmail.com">hlong121508@gmail.com</a>
+      </div>
 
-    <!--
-    ========================================================
-    CONTACT
-    ========================================================
-    -->
-    <section id="contact">
-        <h1 class="section-title">Contact</h1>
-        <div id="platforms-display">
-            <div class="platform">
-                <div class="title">
-                    <img
-                        src="https://brandlogos.net/wp-content/uploads/2020/10/gmail-logo-1.png"
-                        alt="github"
-                        width="30"
-                    >
-                    <h2>Email</h2>
-                </div>
-                <a href="mailto:hlong121508@gmail.com">hlong121508@gmail.com</a>
-            </div>
-
-            <div class="platform">
-                <div class="title">
-                    <img
-                        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/3840px-LinkedIn_icon_circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-                        alt="linkedin"
-                        width="30"
-                    >
-                    <h2>LinkedIn</h2>
-                </div>
-                <a href="https://www.linkedin.com/in/long-hoang-11434743b/" target="_blank">linkedin.com/in/long-hoang</a>
-            </div>
-
-            <div class="platform">
-                <div class="title">
-                    <img
-                        src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
-                        alt="github"
-                        width="30"
-                    >
-                    <h2>GitHub</h2>
-                </div>
-                <a href="https://github.com/longhoang1208" target="_blank">github.com/longhoang1208</a>
-            </div>
+      <div class="platform">
+        <div class="title">
+          <img
+            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/3840px-LinkedIn_icon_circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+            alt="linkedin"
+            width="30"
+          >
+          <h2>LinkedIn</h2>
         </div>
+        <a href="https://www.linkedin.com/in/long-hoang-11434743b/" target="_blank">linkedin.com/in/long-hoang</a>
+      </div>
 
-        <hr style="width: 90vw; border: 1px solid rgb(123, 122, 122);">
-
-        <div id="footer">
-            <p><b>Subject:</b> AP Computer Science</p>
-            <p><b>Project:</b> Career Orientation Website</p>
-            <p><b>Contributors:</b> Hoang Long</p>
+      <div class="platform">
+        <div class="title">
+          <img
+              src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
+              alt="github"
+              width="30"
+          >
+          <h2>GitHub</h2>
         </div>
-    </section>
+        <a href="https://github.com/longhoang1208" target="_blank">github.com/longhoang1208</a>
+      </div>
+    </div>
 
-    <script src="./app.js"></script>
+    <hr style="width: 90vw; border: 1px solid rgb(123, 122, 122);">
+
+    <div id="footer">
+      <p><b>Subject:</b> AP Computer Science</p>
+      <p><b>Project:</b> Career Orientation Website</p>
+      <p><b>Contributors:</b> Hoang Long</p>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
 </body>
 </html>

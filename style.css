@@ -84,7 +84,7 @@ NAVIGATION BAR
   top: 0;
 
   margin: 0;
-  padding: 0;
+  padding: .5em 0 .5em 0;
   
   background-color: rgb(18, 9, 42);
   position: fixed;
@@ -113,18 +113,18 @@ NAVIGATION BAR
 
 #navbar .nav-section {
   transition: transform 0.2s ease-in-out;
+  padding: 1cqh 1em;
+  border-radius: 1em;
 }
 
 #navbar .nav-section a {
   text-decoration: none;
-  padding: 1cqh 1em;
   color: rgb(162, 167, 207);
   height: 100%;
 }
 
-#navbar .nav-section:hover {
-  background-color: rgb(40, 40, 63);
-  transform: scale(1.2);
+#navbar .nav-section:active a {
+  color: white;
 }
 
 #navbar .nav-section.active {
@@ -170,8 +170,15 @@ HOME
 }
 
 #my-img {
-  height: 50cqh;
   align-self: center;
+}
+
+#my-img img {
+  width: 20cqw;
+}
+
+#my-img img {
+  width: 20cqw;
 }
 
 

@@ -58,6 +58,7 @@ section {
   height: fit-content;
   width: 100%;
   margin: 0;
+  margin-bottom: 10vh;
 
   display: flex;
 }
@@ -160,7 +161,7 @@ HOME
 }
 
 #home hr {
-  border-color: rgb(178, 163, 98);
+  border: 1px dashed rgb(178, 163, 98);
   width: 80%;
   margin-left: 4.6cqw;
 }
@@ -178,14 +179,12 @@ HOME
 
 #my-img {
   align-self: center;
+  border: 1px solid rgb(255, 235, 170);
+  border-radius: 3em;
 }
 
 #my-img img {
-  width: 20cqw;
-}
-
-#my-img img {
-  width: 30cqw;
+  width: 35cqw;
 }
 
 .intro {
@@ -345,28 +344,6 @@ CAREER GROUPS
   position: static;
 }
 
-#groups-nav .career-group-nav-section .info {
-  display: none;
-
-  position: absolute;
-  box-sizing: border-box;
-  
-  width: 100%;
-  
-  top: calc(100% + 0.5em);
-  left: 0;
-
-  padding: 1em 2em 1em 1em;
-
-  font-family: serif;
-  font-style: italic;
-  font-size: 2cqw;
-
-  background: rgba(255, 255, 255, 0.134);
-  border-radius: 1em;
-  border-left: .2cqw solid rgb(254, 190, 158);
-}
-
 #groups-nav .career-group-nav-section .group-name {
   text-decoration: none;
   font-size: 2.4vw;
@@ -390,6 +367,74 @@ CAREER GROUPS
   border-radius: .3em;
 }
 
+
+#groups-nav .career-group-nav-section .info {
+  display: none;
+  
+  position: absolute;
+  box-sizing: border-box;
+  
+  width: 100%;
+  padding: 1em 1.5em;
+  
+  top: calc(100% + 1em);
+  left: 0;
+  
+  background: rgba(255, 255, 255, 0.134);
+  border-radius: 1em;
+  border-left: .2cqw solid rgb(254, 190, 158);
+  
+  font-family: sans-serif;
+  font-size: 1.5cqw;
+}
+
+#groups-nav .career-group-nav-section .info .info-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: fit-content;
+
+  gap: .5em;
+
+  padding: 0;
+  margin: 0;
+
+  border-bottom: .1em solid rgb(213, 212, 212);
+}
+
+#groups-nav .career-group-nav-section .info .info-title .icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+}
+
+#groups-nav .career-group-nav-section .info .info-title p {
+  margin: 0;
+
+  color: rgb(172, 205, 253);
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+#groups-nav .career-group-nav-section .info p {
+  margin-bottom: 2em;
+  font-family: monospace;
+}
+
+/* SAMPLE OCCUPATIONS */
+#groups-nav .career-group-nav-section .info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+
+  margin-top: 1em;
+  margin-left: 1em;
+  padding: 0;
+
+  font-family: monospace;
+}
+
 #groups-nav .career-group-nav-section.active .info {
   display: block;
 }
@@ -400,6 +445,19 @@ CAREER GROUPS
 TARGET CAREER
 ===========================================
 */
+#target-career {
+  flex-direction: row;
+  align-items: center;
+}
+
+#target-career .section-title {
+  width: 30vw;
+  margin-left: 5cqw;
+}
+
+#target-career #career-display {
+  margin-left: auto;
+}
 
 
 /*

@@ -124,7 +124,7 @@ NAVIGATION BAR
 }
 
 #navbar .nav-section:active a {
-  color: white;
+  color: rgb(213, 216, 241);
 }
 
 #navbar .nav-section.active {
@@ -178,7 +178,13 @@ HOME
 }
 
 #my-img img {
-  width: 20cqw;
+  width: 30cqw;
+}
+
+#my-img figcaption {
+  text-align: center;
+  font-family: monospace;
+  font-size: 5cqh;
 }
 
 
@@ -350,19 +356,18 @@ CAREER GROUPS
 
   padding: 1em 2em 1em 1em;
 
-  color: black;
-  font-family:'Times New Roman', Times, serif;
+  font-family: serif;
   font-style: italic;
   font-size: 2cqw;
 
-  background: rgba(255, 255, 255, 0.802);
+  background: rgba(255, 255, 255, 0.134);
   border-radius: 1em;
 }
 
 #groups-nav .career-group-nav-section .group-name {
   text-decoration: none;
   font-size: 2.4vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI';
   
   color: rgb(102, 102, 102);
   margin: 0;

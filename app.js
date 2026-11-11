@@ -1,14 +1,14 @@
-const navSection = document.querySelectorAll(".nav-section");
+// const navSection = document.querySelectorAll(".nav-section");
 
-navSection.forEach(link => {
-    link.addEventListener("click", () => {
-        navSection.forEach(item => {
-            item.classList.remove("active");
-        });
+// navSection.forEach(link => {
+//     link.addEventListener("click", () => {
+//         navSection.forEach(item => {
+//             item.classList.remove("active");
+//         });
 
-        link.classList.add("active");
-    })
-})
+//         link.classList.add("active");
+//     })
+// })
 
 
 const careerGroupNavSection = document.querySelectorAll(".career-group-nav-section");

@@ -57,12 +57,14 @@ section {
   min-height: 100vh;
   height: fit-content;
   width: 100%;
-
   margin: 0;
+
+  display: flex;
 }
 
 .section-title {
   margin: 0;
+  margin-top: 15cqh;
   padding: 0;
   
   color: white;
@@ -139,9 +141,7 @@ HOME
 */
 #home {
   padding: 0;
-  margin-bottom: 10vh;
 
-  display: flex;
   flex-direction: row;
   gap: 0;
 }
@@ -154,8 +154,15 @@ HOME
 
 #home .section-title {
   margin-top: 5cqh;
+  margin-bottom: 5cqh;
   margin-left: 5cqw;
   width: 50vw;
+}
+
+#home hr {
+  border-color: rgb(178, 163, 98);
+  width: 80%;
+  margin-left: 4.6cqw;
 }
 
 #home h2 {
@@ -181,10 +188,14 @@ HOME
   width: 30cqw;
 }
 
-#my-img figcaption {
-  text-align: center;
+.intro {
   font-family: monospace;
-  font-size: 5cqh;
+  font-size: 3cqh;
+  
+  margin: 0;
+  margin-left: 5cqw;
+
+  color: rgb(154, 153, 153);
 }
 
 
@@ -194,15 +205,13 @@ ABOUT ME
 ===========================================
 */
 #about-me {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 #about-me .section-title {
   margin-left: 5cqw;
-  margin-top: 10cqh;
-  color: aquamarine;
+  color: rgb(127, 255, 212);
 }
 
 #about-me .paragraphs {
@@ -299,14 +308,8 @@ CAREER GROUPS
 ===========================================
 */
 #career-groups {
-  display: flex;
   flex-direction: column;
-
   align-items: center;
-}
-
-#career-groups .section-title {
-  margin-top: 10cqh;
 }
 
 #groups-display {
@@ -326,7 +329,6 @@ CAREER GROUPS
   height: fit-content;
   padding: 0.5em 0 0.5em 0;
   
-  border-radius: .2em;
   border-bottom: 2px solid rgb(106, 182, 181);
 }
 
@@ -362,6 +364,7 @@ CAREER GROUPS
 
   background: rgba(255, 255, 255, 0.134);
   border-radius: 1em;
+  border-left: .2cqw solid rgb(254, 190, 158);
 }
 
 #groups-nav .career-group-nav-section .group-name {
@@ -390,6 +393,13 @@ CAREER GROUPS
 #groups-nav .career-group-nav-section.active .info {
   display: block;
 }
+
+
+/*
+===========================================
+TARGET CAREER
+===========================================
+*/
 
 
 /*

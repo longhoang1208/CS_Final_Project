@@ -455,8 +455,36 @@ TARGET CAREER
   margin-left: 5cqw;
 }
 
-#target-career #career-display {
+#career-display {
+  display: flex;
+  flex-direction: column;
+  gap: 5cqh;
   margin-left: auto;
+
+  align-self: center;
+}
+
+#career-display .job-card {
+  background: linear-gradient(
+    to bottom,
+    rgba(54, 39, 39, 0.707),
+    rgba(144, 130, 105, 0.67)
+  );
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  border: 1px solid white;
+  border-radius: 2em;
+}
+
+#career-display .job-card p {
+  margin: 0 1em 1em 1em;
+}
+
+#career-display .job-card h2 {
+  margin: 1em 0 .5em .6em;
 }
 
 

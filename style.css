@@ -499,19 +499,36 @@ TARGET CAREER
 }
 
 /* WEB DEVELOPER */
-#web-dev {
+.job-section {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-
-  padding: 0;
-  padding-left: 5cqw;
 }
 
-#web-dev .section-title {
+.job-section .section-title {
   font-size: 8vh;
+  margin-left: 5cqw;
 }
 
-#web-dev a {
+.job-section h2 {
+  font-size: 5cqh;
+  margin: 1em 0 .5em 5cqw;
+}
+
+.job-section .job-dscrpt {
+  font-size: 3.3cqh;
+  margin: 1cqh 5cqw 3cqh 5cqw;
+  width: 80vw;
+}
+
+.job-section ul {
+  margin: 0 3cqw;
+  font-size: 3.3cqh;
+  list-style-type: "🟣 ";
+  width: 80vw;
+}
+
+.job-section a {
+  margin-left: 5cqw;
   color: rgb(115, 176, 255);
 }
 

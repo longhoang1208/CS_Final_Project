@@ -566,7 +566,7 @@ CONTACT
 
 #platforms-display {
   margin: 0;
-  margin-top: 3cqh;
+  margin-top: 20cqh;
 
   display: flex;
   flex-direction: row;
@@ -582,9 +582,12 @@ CONTACT
   flex-direction: row;
 
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
-  gap: 1vw;
+  gap: 0;
+  text-decoration: none;
+
+  padding: 0;
 }
 
 .platform img {
@@ -607,14 +610,13 @@ CONTACT
 .nameNlink h2 {
   margin: 0;
   padding: 0;
-  padding-left: 1vw;
+  color: white;
 }
 
 .nameNlink a {
   font-size: 1vw;
   margin: 0;
   padding: 0;
-  padding-left: 1vw;
 }
 
 

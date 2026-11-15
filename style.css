@@ -49,6 +49,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgb(102, 116, 149);
+  border-radius: 5px;
 }
 
 

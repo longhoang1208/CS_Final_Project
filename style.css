@@ -122,7 +122,7 @@ NAVIGATION BAR
 
 #navbar .nav-section a {
   text-decoration: none;
-  color: rgb(162, 167, 207);
+  color: rgb(188, 194, 240);
   height: 100%;
 }
 
@@ -525,7 +525,11 @@ TARGET CAREER
 .job-section .job-dscrpt {
   font-size: 3.3cqh;
   margin: 1cqh 5cqw 3cqh 5cqw;
+  padding: 3cqh 2cqw 3cqh 2cqw;
   width: 80vw;
+
+  font-family: monospace;
+  border: 1px solid rgb(255, 244, 169);
 }
 
 .job-section ul {

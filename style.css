@@ -44,12 +44,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(200, 200, 200);
+  background: rgb(60, 58, 87);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(80, 80, 80);
-  border-radius: 3px;
+  background: rgb(102, 116, 149);
 }
 
 

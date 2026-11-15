@@ -158,11 +158,6 @@ HOME
   width: 50vw;
 }
 
-#home hr {
-  border: 1px dashed rgb(178, 163, 98);
-  width: 80%;
-  margin-left: 4.6cqw;
-}
 
 #home h2 {
   margin: 0;
@@ -191,8 +186,10 @@ HOME
   
   margin: 0;
   margin-left: 5cqw;
+  padding-left: .5em;
 
-  color: rgb(154, 153, 153);
+  color: rgb(141, 140, 140);
+  border-left: .3em solid rgb(255, 44, 94);
 }
 
 
@@ -530,6 +527,7 @@ TARGET CAREER
 
   font-family: monospace;
   border: 1px solid rgb(255, 244, 169);
+  border-radius: 1em;
 }
 
 .job-section ul {

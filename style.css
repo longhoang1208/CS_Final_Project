@@ -567,8 +567,12 @@ UNIVERSITY OF INTEREST
 
 .uni-card {
   width: 40cqw;
-  border: .1cqw solid rgb(253, 200, 52);
-  border-radius: 1em;
+
+  border: .1cqw solid #fdc834;
+  border-left: .5cqw solid rgb(253, 200, 52);
+  
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 
   background: linear-gradient(
     to top right,
@@ -594,16 +598,25 @@ UNIVERSITY OF INTEREST
   font-size: 1.2cqw;
 }
 
-.uni-card h3 {
+.uni-card > h3 {
   margin: 5cqh 0 2cqh 2cqw;
 }
 
-.uni-card ul {
+.uni-card > ul {
   margin: 0 0 5cqh 0;
 }
 
-.uni-card a {
+.uni-card > ul > li > a {
   margin: 0;
+}
+
+.uni-card > a {
+  margin: 0;
+  margin-left: 2cqw;
+  margin-bottom: 1em;
+
+  text-decoration: none;
+  color: white;
 }
 
 .uni-card:hover {

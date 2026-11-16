@@ -496,7 +496,7 @@ TARGET CAREER
   color: rgb(213, 213, 213);
 }
 
-/* WEB DEVELOPER */
+/* JOB SECTION */
 .job-section {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -527,10 +527,10 @@ TARGET CAREER
 
   font-family: monospace;
   border: 1px solid rgb(255, 244, 169);
-  border-radius: 1em;
+  border-radius: .5em;
 }
 
-.job-section ul {
+.job-section > ul {
   margin: 0 3cqw;
   font-size: 3.3cqh;
   list-style-type: square;
@@ -540,6 +540,75 @@ TARGET CAREER
 .job-section a {
   margin-left: 5cqw;
   color: rgb(115, 176, 255);
+}
+
+
+/*
+===========================================
+UNIVERSITY OF INTEREST
+===========================================
+*/
+#study {
+  flex-direction: column;
+  align-items: center;
+}
+
+#study .section-title {
+  font-size: 10cqh;
+}
+
+#uni-display {
+  display: flex;
+  flex-direction: row;
+  gap: 5cqw;
+
+  margin-top: 10cqh;
+}
+
+.uni-card {
+  width: 40cqw;
+  border: .1cqw solid rgb(253, 200, 52);
+  border-radius: 1em;
+
+  background: linear-gradient(
+    to top right,
+    rgba(0, 255, 247, 0.2),
+    rgba(123, 0, 255, 0.2),
+    rgba(255, 0, 51, 0.2)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: transform .15s ease-in-out;
+}
+
+.uni-card img {
+  width: 20cqw;
+  margin: 1em 1em;
+}
+
+.uni-card .uni-dscrpt {
+  margin: 1cqh 2cqw;
+  font-size: 1.2cqw;
+}
+
+.uni-card h3 {
+  margin: 5cqh 0 2cqh 2cqw;
+}
+
+.uni-card ul {
+  margin: 0 0 5cqh 0;
+}
+
+.uni-card a {
+  margin: 0;
+}
+
+.uni-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 

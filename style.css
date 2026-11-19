@@ -25,7 +25,7 @@ body {
       rgb(9, 8, 26),
       rgb(18, 17, 44),
       rgb(67, 26, 54)
-    );
+    );  
 
   background-size:
     50px 50px,
@@ -563,6 +563,8 @@ UNIVERSITY OF INTEREST
   gap: 5cqw;
 
   margin-top: 10cqh;
+  align-items: flex-start;
+  padding: 0;
 }
 
 .uni-card {
@@ -583,7 +585,7 @@ UNIVERSITY OF INTEREST
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   transition: transform .15s ease-in-out;
 }
@@ -622,6 +624,51 @@ UNIVERSITY OF INTEREST
 .uni-card:hover {
   cursor: pointer;
   transform: scale(1.02);
+}
+
+
+/*
+===========================================
+ESSENTIAL SKILLS
+===========================================
+*/
+#skills {
+  flex-direction: column;
+}
+
+#skills .section-title {
+  font-size: 10vh;
+}
+
+#skills-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: row;
+
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: .5em;
+
+  padding: .5em .5em;
+  gap: .5em;
+  align-items: center;
+}
+
+.skill-card > img {
+  width: 3cqw;
+}
+
+.skill-card > h3 {
+  margin: 0;
+  font-size: 2cqw;
+}
+
+.skill-card.yellow {
+  background: rgb(253, 200, 52);
 }
 
 

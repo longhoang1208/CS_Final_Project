@@ -511,12 +511,19 @@ TARGET CAREER
 }
 
 .job-section > h2 {
-  font-size: 5cqh;
+  font-size: 4cqh;
+  font-weight: lighter;
 
-  margin: 0;
-  padding: 1em 0 .5em 5cqw;
+  margin: 1em 0 .5em 5cqw;
+  padding: .1em .8em;
 
-  color: rgb(169, 173, 255);
+  color: rgb(169, 255, 193);
+  font-family: monospace;
+
+  background: rgba(255, 255, 255, 0.112);
+  width: fit-content;
+  border-radius: 1em;
+  border: 1px solid rgb(51, 248, 199);
 }
 
 .job-section .job-dscrpt {
@@ -634,6 +641,7 @@ ESSENTIAL SKILLS
 */
 #skills {
   flex-direction: column;
+  align-items: center;
 }
 
 #skills .section-title {
@@ -644,13 +652,13 @@ ESSENTIAL SKILLS
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1cqw;
 }
 
 .skill-card {
   display: flex;
   flex-direction: row;
 
-  border: 1px solid rgb(167, 166, 166);
   border-radius: .5em;
 
   padding: .5em .5em;
@@ -667,8 +675,22 @@ ESSENTIAL SKILLS
   font-size: 2cqw;
 }
 
-.skill-card.yellow {
-  background: rgb(253, 200, 52);
+.skill-card.red {
+  background: rgb(253, 52, 96);
+
+  border-top: .2em solid rgb(250, 211, 220);
+  border-left: .2em solid rgb(254, 160, 180);
+  border-right: .15em solid rgb(97, 1, 22);
+  border-bottom: .15em solid rgb(148, 31, 56);
+}
+
+.skill-card.blue {
+  background: rgb(57, 5, 154);
+
+  border-top: .2em solid rgb(217, 211, 250);
+  border-left: .2em solid rgb(160, 163, 254);
+  border-right: .15em solid rgb(14, 2, 50);
+  border-bottom: .15em solid rgb(34, 17, 108);
 }
 
 

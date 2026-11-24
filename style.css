@@ -10,30 +10,24 @@ body {
   margin: 0;
 
   background:
-    linear-gradient(
-      rgba(73, 73, 73, 0.2) 1px,
-      transparent 1px
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(1, 48, 49, 0.9) 0,
+      transparent 35%
     ),
-    linear-gradient(
-      90deg,
-      rgba(73, 73, 73, 0.2) 1px,
-      transparent 1px
+
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(3, 1, 49, 0.9) 0,
+      transparent 35%
     ),
-    linear-gradient(
-      to bottom,
-      rgb(0, 0, 0),
-      rgb(9, 8, 26),
-      rgb(18, 17, 44),
-      rgb(67, 26, 54)
-    );  
 
-  background-size:
-    50px 50px,
-    50px 50px,
-    cover;
+    #000;
 
+  background-size: cover;
   background-attachment: fixed;
 
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -90,7 +84,7 @@ NAVIGATION BAR
   margin: 0;
   padding: .5em 0 .5em 0;
   
-  background-color: rgb(18, 9, 42);
+  background-color: rgb(15, 22, 22);
   position: fixed;
   
   display: flex;
@@ -122,16 +116,20 @@ NAVIGATION BAR
 
 #navbar .nav-section a {
   text-decoration: none;
-  color: rgb(188, 194, 240);
+  color: rgb(104, 107, 120);
   height: 100%;
 }
 
-#navbar .nav-section:active a {
-  color: rgb(213, 216, 241);
+#navbar .nav-section.active a {
+  color: rgb(213, 241, 235);
 }
 
 #navbar .nav-section.active {
-  background-color: rgb(40, 40, 63);
+  background-color: rgb(63, 96, 96);
+}
+
+#navbar .nav-section:hover {
+  background-color: rgb(28, 51, 51);
 }
 
 
@@ -172,24 +170,27 @@ HOME
 
 #my-img {
   align-self: center;
-  border: 1px solid rgb(255, 235, 170);
+  border: 1px solid rgb(170, 238, 255);
   border-radius: 3em;
 }
 
 #my-img img {
   width: 35cqw;
+  height: 35cqw;
+  object-fit: cover;
+  
+  border-radius: 50%;
 }
 
 .intro {
   font-family: monospace;
-  font-size: 3cqh;
+  font-size: 3.5cqh;
   
-  margin: 0;
-  margin-left: 5cqw;
-  padding-left: .5em;
+  margin: .2em 0 .2em 5cqw;
+  padding: 0 .5em;
 
-  color: rgb(141, 140, 140);
-  border-left: .3em solid rgb(44, 255, 157);
+  color: rgb(186, 185, 185);
+  border-left: .2em solid rgb(96, 255, 181);
 }
 
 
@@ -254,15 +255,16 @@ ABOUT ME
 .project-card {
   text-decoration: none;
 
-  width: 35vw;
+  width: 40vw;
   height: fit-content;
-  padding: 1em 2em;
+  padding: 1em 1em;
+  margin: 0;
 
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 
-  background: rgba(20, 20, 30, 0.862);
+  background: rgba(20, 25, 30, 0.45);
 
   border: 1px solid rgb(90, 90, 90);
   border-radius: 1em;
@@ -348,7 +350,7 @@ CAREER GROUPS
   margin: 0;
   padding: .3em .5em;
 
-  background: rgb(33, 31, 62);
+  background: rgba(115, 115, 116, 0.367);
   border-radius: 1em;
 }
 
@@ -357,7 +359,7 @@ CAREER GROUPS
 }
 
 #groups-nav .career-group-nav-section.active .group-name {
-  background: rgb(60, 55, 162);
+  background: rgba(99, 133, 128, 0.367);
   color: white;
   border-radius: .3em;
 }
@@ -378,7 +380,6 @@ CAREER GROUPS
   
   background: rgba(255, 255, 255, 0.134);
   border-radius: 1em;
-  border-left: .2cqw solid rgb(254, 190, 158);
   
   font-family: sans-serif;
   font-size: 1.5cqw;
@@ -463,14 +464,14 @@ TARGET CAREER
 }
 
 #career-display .job-card {
-  background: rgb(21, 21, 21);
+  background: rgba(21, 21, 21, 0.7);
   text-decoration: none;
 
   display: flex;
   flex-direction: column;
   padding: 0;
 
-  border: 1px solid rgb(220, 198, 151);
+  border: 1px solid rgb(144, 144, 144);
   border-radius: 1em;
 
   transition: transform .2s ease-in-out;
@@ -479,14 +480,13 @@ TARGET CAREER
 #career-display .job-card:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 0 0 1em rgb(137, 123, 93);
 }
 
 #career-display .job-card h2 {
   margin: .8em 0 .5em .6em;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 5cqh;
-  color: rgb(161, 185, 255);
+  color: rgb(161, 242, 255);
 }
 
 #career-display .job-card p {
@@ -507,7 +507,7 @@ TARGET CAREER
   font-size: 8vh;
   margin: 15cqh 0 5cqh 5cqw;
   padding-left: .3em;
-  border-left: .2em solid rgb(255, 0, 93);
+  border-left: .2em solid rgb(82, 255, 203);
 }
 
 .job-section > h2 {
@@ -517,13 +517,13 @@ TARGET CAREER
   margin: 1em 0 .5em 5cqw;
   padding: .1em .8em;
 
-  color: rgb(169, 255, 193);
+  color: rgb(169, 249, 255);
   font-family: monospace;
 
   background: rgba(255, 255, 255, 0.112);
   width: fit-content;
   border-radius: 1em;
-  border: 1px solid rgb(51, 248, 199);
+  border: 1px solid rgb(51, 232, 248);
 }
 
 .job-section .job-dscrpt {
@@ -533,15 +533,25 @@ TARGET CAREER
   width: 80vw;
 
   font-family: monospace;
-  border: 1px solid rgb(255, 244, 169);
+  border: 1px solid rgb(75, 99, 89);
   border-radius: .5em;
+
+  color: rgb(196, 219, 212);
 }
 
 .job-section > ul {
-  margin: 0 3cqw;
+  margin: 0 0 1em 5cqw;
   font-size: 3.3cqh;
-  list-style-type: square;
   width: 80vw;
+
+  color: white;
+  background: rgba(128, 128, 128, 0.379);
+  border-radius: .5em;
+}
+
+.job-section > ul li::marker {
+  color: rgb(84, 245, 178);
+  font-size: 1.5em;
 }
 
 .job-section a {
@@ -577,18 +587,10 @@ UNIVERSITY OF INTEREST
 .uni-card {
   width: 40cqw;
 
-  border: .1cqw solid #fdc834;
-  border-left: .5cqw solid rgb(253, 200, 52);
-  
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  border: .1cqw solid #7e7e7e;
+  border-radius: 1em;
 
-  background: linear-gradient(
-    to top right,
-    rgba(0, 255, 247, 0.2),
-    rgba(123, 0, 255, 0.2),
-    rgba(255, 0, 51, 0.2)
-  );
+  background: rgba(54, 53, 53, 0.6);
 
   display: flex;
   flex-direction: column;
@@ -617,6 +619,7 @@ UNIVERSITY OF INTEREST
 
 .uni-card > ul > li > a {
   margin: 0;
+  color: rgb(192, 230, 247);
 }
 
 .uni-card > a {
@@ -658,7 +661,7 @@ ESSENTIAL SKILLS
   gap: 1cqw;
 
   margin-top: 5cqh;
-  width: 80cqw;
+  width: 90cqw;
   justify-content: center;
 }
 
@@ -667,10 +670,14 @@ ESSENTIAL SKILLS
   flex-direction: row;
 
   border-radius: .5em;
+  background: rgba(62, 64, 62, 0.509);
+  border-left: .2em solid rgb(53, 120, 102);
 
   padding: .5em .5em;
   gap: .5em;
   align-items: center;
+  width: 20cqw;
+  font-family: monospace;
 
   transition: transform .2s ease-in-out;
 }
@@ -697,63 +704,45 @@ ESSENTIAL SKILLS
   cursor: pointer;
 }
 
-.skill-card.red {
-  background: rgb(253, 52, 96);
-
+/* .skill-card.red {
   border-top: .2em solid rgb(250, 211, 220);
   border-left: .2em solid rgb(254, 160, 180);
 }
 
 .skill-card.blue {
-  background: rgb(57, 5, 154);
-
   border-top: .2em solid rgb(217, 211, 250);
   border-left: .2em solid rgb(160, 163, 254);
 }
 
 .skill-card.green {
-  background: rgb(9, 217, 123);
-
   border-top: .2em solid rgb(211, 250, 223);
   border-left: .2em solid rgb(46, 181, 73);
 }
 
 .skill-card.yellow {
-  background: rgb(246, 192, 16);
-
   border-top: .2em solid rgb(250, 247, 211);
   border-left: .2em solid rgb(236, 213, 121);
 }
 
 .skill-card.orange {
-  background: rgb(246, 71, 12);
-
   border-top: .2em solid rgb(250, 223, 211);
   border-left: .2em solid rgb(248, 186, 132);
 }
 
 .skill-card.black {
-  background: rgb(54, 54, 54);
-
   border-top: .2em solid rgb(221, 221, 221);
   border-left: .2em solid rgb(116, 116, 116);
 }
 
 .skill-card.white {
-  background: rgb(237, 236, 236);
-
   border-top: .2em solid rgb(255, 255, 255);
   border-left: .2em solid rgb(170, 170, 170);
-
-  color: black;
 }
 
 .skill-card.cyan {
-  background: rgb(85, 143, 251);
-
   border-top: .2em solid rgb(203, 228, 255);
   border-left: .2em solid rgb(27, 81, 227);
-}
+} */
 
 
 /*
@@ -781,7 +770,7 @@ CONTACT
 
 #platforms-display {
   margin: 0;
-  margin-top: 20cqh;
+  margin-top: 10cqh;
 
   display: flex;
   flex-direction: row;
@@ -811,6 +800,7 @@ CONTACT
   margin: 0;
 }
 
+
 .nameNlink {
   display: flex;
   flex-direction: column;
@@ -832,6 +822,8 @@ CONTACT
   font-size: 1vw;
   margin: 0;
   padding: 0;
+
+  color: rgb(161, 182, 185);
 }
 
 
@@ -842,8 +834,10 @@ CONTACT
   color: rgb(94, 94, 94);
 
   align-self: flex-start;
+  
   padding: 0;
   padding-left: 2em;
+
   margin: 0;
   margin-top: auto;
   margin-bottom: 5vh;

@@ -622,10 +622,13 @@ UNIVERSITY OF INTEREST
 .uni-card > a {
   margin: 0;
   margin-left: 2cqw;
-  margin-bottom: 1em;
 
   text-decoration: none;
   color: white;
+}
+
+.uni-card > :last-child {
+  margin-bottom: 1em;
 }
 
 .uni-card:hover {
@@ -653,6 +656,10 @@ ESSENTIAL SKILLS
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1cqw;
+
+  margin-top: 5cqh;
+  width: 80cqw;
+  justify-content: center;
 }
 
 .skill-card {
@@ -664,6 +671,8 @@ ESSENTIAL SKILLS
   padding: .5em .5em;
   gap: .5em;
   align-items: center;
+
+  transition: transform .2s ease-in-out;
 }
 
 .skill-card > img {
@@ -675,13 +684,24 @@ ESSENTIAL SKILLS
   font-size: 2cqw;
 }
 
+.skill-card > :first-child {
+  padding-left: .5em;
+}
+
+.skill-card > :last-child {
+  padding-right: .5em;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .skill-card.red {
   background: rgb(253, 52, 96);
 
   border-top: .2em solid rgb(250, 211, 220);
   border-left: .2em solid rgb(254, 160, 180);
-  border-right: .15em solid rgb(97, 1, 22);
-  border-bottom: .15em solid rgb(148, 31, 56);
 }
 
 .skill-card.blue {
@@ -689,8 +709,50 @@ ESSENTIAL SKILLS
 
   border-top: .2em solid rgb(217, 211, 250);
   border-left: .2em solid rgb(160, 163, 254);
-  border-right: .15em solid rgb(14, 2, 50);
-  border-bottom: .15em solid rgb(34, 17, 108);
+}
+
+.skill-card.green {
+  background: rgb(9, 217, 123);
+
+  border-top: .2em solid rgb(211, 250, 223);
+  border-left: .2em solid rgb(46, 181, 73);
+}
+
+.skill-card.yellow {
+  background: rgb(246, 192, 16);
+
+  border-top: .2em solid rgb(250, 247, 211);
+  border-left: .2em solid rgb(236, 213, 121);
+}
+
+.skill-card.orange {
+  background: rgb(246, 71, 12);
+
+  border-top: .2em solid rgb(250, 223, 211);
+  border-left: .2em solid rgb(248, 186, 132);
+}
+
+.skill-card.black {
+  background: rgb(54, 54, 54);
+
+  border-top: .2em solid rgb(221, 221, 221);
+  border-left: .2em solid rgb(116, 116, 116);
+}
+
+.skill-card.white {
+  background: rgb(237, 236, 236);
+
+  border-top: .2em solid rgb(255, 255, 255);
+  border-left: .2em solid rgb(170, 170, 170);
+
+  color: black;
+}
+
+.skill-card.cyan {
+  background: rgb(85, 143, 251);
+
+  border-top: .2em solid rgb(203, 228, 255);
+  border-left: .2em solid rgb(27, 81, 227);
 }
 
 

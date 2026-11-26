@@ -486,9 +486,8 @@ TARGET CAREER
   
   color: transparent;
   background: linear-gradient(
-    45deg,
-    rgb(251, 207, 216),
-    rgb(183, 133, 253),
+    90deg,
+    rgb(0, 255, 106),
     rgb(159, 251, 234)
   );
   background-clip: text;

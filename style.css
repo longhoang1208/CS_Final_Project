@@ -131,7 +131,7 @@ NAVIGATION BAR
 }
 
 #navbar .nav-section:hover {
-  background-color: rgb(28, 51, 51);
+  background-color: rgb(36, 54, 54);
 }
 
 
@@ -243,6 +243,11 @@ ABOUT ME
   font-size: 2cqw;
 
   background: rgba(128, 128, 128, 0.313);
+  background-image: radial-gradient(
+    circle 100px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(113, 112, 112, 0.2),
+    transparent 80%
+  );
   border-radius: .5em;
 }
 
@@ -261,7 +266,7 @@ ABOUT ME
   margin-top: 10cqh;
 }
 
-/* PROJECT CARD */
+/* PROJECT CARDS */
 #projects-display {
   display: flex;
   flex-direction: row;
@@ -287,11 +292,18 @@ ABOUT ME
   gap: 0.5em;
 
   background: rgba(58, 71, 83, 0.45);
+  background-image: radial-gradient(
+    circle 150px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(66, 166, 139, 0.2),
+    transparent 80%
+  );
 
   border-radius: 1em;
 
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.project-card:hover {cursor: pointer;}
 
 .project-title {
   display: flex;
@@ -412,6 +424,11 @@ CAREER GROUPS
   left: 0;
   
   background: rgba(255, 255, 255, 0.134);
+  background-image: radial-gradient(
+    circle 150px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(58, 149, 134, 0.1),
+    transparent 80%
+  );
   border-radius: 1em;
   
   font-family: sans-serif;
@@ -486,9 +503,9 @@ TARGET CAREER
   
   color: transparent;
   background: linear-gradient(
-    90deg,
-    rgb(0, 255, 106),
-    rgb(159, 251, 234)
+    135deg,
+    rgb(0, 255, 234),
+    rgb(159, 251, 186)
   );
   background-clip: text;
 }
@@ -503,8 +520,7 @@ TARGET CAREER
   align-self: center;
 }
 
-#career-display .job-card {
-  background: rgba(21, 21, 21, 0.7);
+.job-card {
   text-decoration: none;
 
   display: flex;
@@ -515,21 +531,28 @@ TARGET CAREER
   border-radius: 1em;
 
   transition: transform .2s ease-in-out;
+
+  background: rgba(21, 21, 21, 0.7);
+  background-image: radial-gradient(
+    circle 100px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(113, 112, 112, 0.2),
+    transparent 80%
+  );
 }
 
-#career-display .job-card:hover {
+.job-card:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
-#career-display .job-card h2 {
+.job-card > h2 {
   margin: .8em 0 .5em .6em;
   font-family: monospace;
   font-size: 5cqh;
-  color: rgb(73, 255, 152);
+  color: rgb(111, 111, 111);
 }
 
-#career-display .job-card p {
+.job-card > p {
   margin: 0 1em 1em 1em;
   font-family: monospace;
   font-size: 3cqh;
@@ -577,6 +600,12 @@ TARGET CAREER
   border-radius: .5em;
 
   color: rgb(196, 219, 212);
+
+  background: radial-gradient(
+    circle 120px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(82, 255, 203, 0.2),
+    transparent 80%
+  );
 }
 
 .job-section > ul {
@@ -585,8 +614,14 @@ TARGET CAREER
   width: 80vw;
 
   color: white;
-  background: rgba(128, 128, 128, 0.379);
   border-radius: .5em;
+  
+  background-color: rgba(128, 128, 128, 0.379);
+  background-image: radial-gradient(
+    circle 100px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(127, 127, 127, 0.2),
+    transparent 80%
+  );
 }
 
 .job-section > ul li::marker {
@@ -631,6 +666,11 @@ UNIVERSITY OF INTEREST
   border-radius: 1em;
 
   background: rgba(54, 53, 53, 0.6);
+  background-image: radial-gradient(
+    circle 120px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(109, 134, 162, 0.2),
+    transparent 80%
+  );
 
   display: flex;
   flex-direction: column;
@@ -710,7 +750,12 @@ ESSENTIAL SKILLS
   flex-direction: row;
 
   border-radius: .5em;
-  background: rgba(62, 64, 62, 0.509);
+  background: rgba(62, 64, 64, 0.509);
+  background-image: radial-gradient(
+    circle 100px at var(--mouse-x, -200px) var(--mouse-y, -200px),
+    rgba(99, 171, 175, 0.2),
+    transparent 80%
+  );
   border-left: .2em solid rgb(53, 120, 102);
 
   padding: .5em .5em;

@@ -50,3 +50,123 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav, { passive: true });
 window.addEventListener("resize", updateActiveNav);
 updateActiveNav();
+
+
+document.querySelectorAll(".job-dscrpt").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".job-section > ul").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".skill-card").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".uni-card").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".job-card").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".career-group-nav-section .info").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll("#about-me > .paragraphs").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
+
+
+document.querySelectorAll(".project-card").forEach((element) => {
+  element.addEventListener("pointermove", (event) => {
+    const rect = element.getBoundingClientRect();
+
+    element.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    element.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  });
+
+  element.addEventListener("pointerleave", () => {
+    element.style.removeProperty("--mouse-x");
+    element.style.removeProperty("--mouse-y");
+  });
+});
